@@ -1,179 +1,95 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
-\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[margin=1.3cm]{geometry}
 \usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{array}
-\usepackage{parskip}
-\usepackage{titlesec}
-\usepackage{fontawesome5}
-\usepackage{xcolor}
-\usepackage{setspace}
-
-% ===== COLORES Y FORMATOS =====
-\definecolor{blueheader}{RGB}{0, 70, 130}
-\definecolor{graytext}{RGB}{80, 80, 80}
-
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blueheader,
-    linkcolor=blueheader,
-}
-
-% ===== FORMATO DE SECCIONES =====
-\titleformat{\section}
-{\Large\bfseries\color{blueheader}}
-{}
-{0em}
-{\rule{\linewidth}{1pt}\\[0.2em]}
-[\vspace{-0.5em}\rule{\linewidth}{0.5pt}]
-
-\titlespacing*{\section}{0pt}{0.8em}{0.4em}
-
-% ===== ENCABEZADO =====
-\newcommand{\header}[5]{
-    \begin{center}
-        {\Huge\bfseries #1}\\[0.2em]
-        {\large\bfseries #2}\\[0.5em]
-        \faMapMarker\ \textbf{#3} \hspace{1em}
-        \faPhone\ \textbf{#4} \hspace{1em}
-        \faEnvelope\ \href{mailto:#5}{\underline{#5}}\\[0.3em]
-        \faLinkedin\ \href{https://linkedin.com/in/jacoga}{linkedin.com/in/jacoga}
-    \end{center}
-    \vspace{0.5em}
-}
-
-% ===== EXPERIENCIA =====
-\newenvironment{experience}
-{\begin{itemize}[leftmargin=*, label={}, itemsep=0.5em]}
-{\end{itemize}}
-
-\newcommand{\expitem}[4]{
-    \item
-    \textbf{#1} \hfill \textbf{#2}\\
-    \textit{#3} \hfill #4
-}
-
-% ===== HABILIDADES =====
-\newcommand{\skillcategory}[2]{
-    \textbf{#1:} #2
-}
+\setlength{\parskip}{0.4em}
+\setlist{noitemsep, topsep=0.1em}
 
 \begin{document}
 
-% ===== ENCABEZADO PRINCIPAL =====
-\header
-{Jorge Armando Cordero García}
-{Ingeniero de Sistemas | Especialista en Soporte TI e Infraestructura}
-{Gamarra, Colombia}
-{+57 317 819 5354}
-{iscuande_1982@hotmail.com}
+% ===== ENCABEZADO =====
+\noindent{\Huge\textbf{Jorge Armando Cordero García}}\\[0.1em]
+\large\textbf{Ingeniero de Sistemas | Especialista en Soporte TI e Infraestructura}\\[0.2em]
+\noindent Gamarra, Colombia | +57 317 819 5354 | \texttt{iscuande\_1982@hotmail.com} | linkedin.com/in/jacoga
+\vspace{0.3em}\hrule\vspace{0.5em}
 
-% ===== PERFIL PROFESIONAL =====
+% ===== PERFIL =====
 \section*{Perfil Profesional}
-Ingeniero de Sistemas con más de 10 años de experiencia en \textbf{Soporte TI Nivel 2}, \textbf{infraestructura tecnológica} y \textbf{redes LAN/WAN} en sectores críticos como salud, educación y gobierno. Especializado en gestión de incidencias (\textbf{ITIL}), continuidad operativa y soporte remoto (\textbf{Help Desk}). En formación continua en \textbf{ciberseguridad}, orientando mi crecimiento profesional hacia roles de infraestructura segura y seguridad de la información.
+Ingeniero de Sistemas con 10+ años en Soporte TI Nivel 2, Help Desk, infraestructura tecnológica y redes LAN/WAN en sectores críticos (salud, educación, gobierno). Especializado en gestión de incidencias (ITIL), continuidad operativa, soporte remoto y administración de sistemas. Formación en ciberseguridad. \textbf{Disponibilidad: Inmediata. Modalidad: Presencial/Remota/Híbrida.}
 
-% ===== EXPERIENCIA PROFESIONAL =====
+% ===== EXPERIENCIA =====
 \section*{Experiencia Profesional}
-\begin{experience}
 
-\expitem{Especialista TI - Consultor Externo}{Ene 2024 -- Presente}
-{Tictelco S.A.S / Expansiones Digitales / Orkasun Roof (USA) / Clientes Privados}{Modalidad Híbrida (Remota/Presencial)}
-\begin{itemize}[leftmargin=*, label=\textbullet]
+\noindent\textbf{Especialista TI - Consultor Externo} \hfill \textbf{Jul 2024 -- Presente}\\
+\textit{Tictelco S.A.S / Expansiones Digitales / Orkasun Roof (USA) / Clientes Privados} \hfill \textit{Híbrida}
+\begin{itemize}
     \item Soporte técnico especializado bajo demanda para múltiples organizaciones.
-    \item Resolución de incidencias de infraestructura, diagnóstico de conectividad en sistemas Windows.
-    \item Adecuación y mantenimiento de racks para equipos de switching y comunicaciones.
-    \item Soporte externo en mantenimiento de plataformas WordPress, gestión de contenidos y ajustes técnicos en HTML/CSS.
-    \item Soporte de escritorio independiente, optimización de sistemas operativos y capacitación técnica.
+    \item Resolución de incidencias IT, diagnóstico de conectividad Windows, administración de racks.
+    \item Soporte WordPress, HTML/CSS, optimización de sistemas, capacitación técnica.
 \end{itemize}
 
-\expitem{Ingeniero de Sistemas}{Feb 2023 -- Jul 2024}
-{E.S.E. Hospital Olaya Herrera}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Soporte TI en entorno hospitalario crítico para más de 200 usuarios.
-    \item Administración básica de servidores Windows Server y gestión de redes LAN.
-    \item Resolución de incidencias garantizando continuidad operativa del 99.5\%.
+\noindent\textbf{Ingeniero de Sistemas} \hfill \textbf{Feb 2023 -- Jul 2024}\\
+\textit{E.S.E. Hospital Olaya Herrera} \hfill \textit{Presencial}
+\begin{itemize}
+    \item Soporte TI en hospital para 200+ usuarios. Administración Windows Server y redes LAN.
+    \item Resolución de incidencias con 99.5\% continuidad operativa.
 \end{itemize}
 
-\expitem{Ingeniero de Sistemas}{Feb 2022 -- Jul 2022}
-{Universidad Popular del César}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Soporte a infraestructura tecnológica institucional.
-    \item Mantenimiento de redes y control de inventario TI.
+\noindent\textbf{Ingeniero de Sistemas} \hfill \textbf{Feb 2022 -- Jul 2022}\\
+\textit{Universidad Popular del César} \hfill \textit{Presencial}
+\begin{itemize}
+    \item Soporte infraestructura tecnológica, mantenimiento de redes, control de inventario TI.
 \end{itemize}
 
-\expitem{Ingeniero de Sistemas}{Abr 2017 -- Oct 2017}
-{Cordisco}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Administración de red y soporte TI a usuarios internos.
-    \item Implementación de mejoras tecnológicas.
+\noindent\textbf{Ingeniero de Sistemas} \hfill \textbf{Abr 2017 -- Oct 2017}\\
+\textit{Cordisco} \hfill \textit{Presencial}
+\begin{itemize}
+    \item Administración de red corporativa, soporte TI interno, implementación de mejoras.
 \end{itemize}
 
-\expitem{Ingeniero de Sistemas}{Abr 2016 -- Mar 2017}
-{Linktech de Colombia}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Soporte a sistemas de información y administración básica de redes.
+\noindent\textbf{Ingeniero de Sistemas} \hfill \textbf{Abr 2016 -- Mar 2017}\\
+\textit{Linktech de Colombia} \hfill \textit{Presencial}
+\begin{itemize}
+    \item Soporte a sistemas de información empresarial, administración básica de redes.
 \end{itemize}
-
-\end{experience}
 
 % ===== EXPERIENCIA ADICIONAL =====
 \section*{Experiencia Adicional}
-\begin{experience}
-\expitem{Auxiliar de Inspección}{Nov 2017 -- Feb 2018}
-{Bureau Veritas Colombia Ltda}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Inspección de medidores y elaboración de informes técnicos en Excel.
+\noindent\textbf{Soldado Profesional} \hfill \textbf{Nov 2000 -- Jun 2005}\\
+\textit{Ejército Nacional de Colombia} \hfill \textit{Presencial}
+\begin{itemize}
+    \item Trabajo en entornos de alta presión, liderazgo operativo, disciplina institucional.
+    \item Cumplimiento de protocolos de seguridad y procedimientos operativos.
 \end{itemize}
-
-\expitem{Técnico Operativo y Administrativo de Apoyo en Tecnología}{Feb 2013 -- Feb 2016}
-{Sector Gobierno}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Apoyo a gestión TIC, Gobierno en Línea y soporte tecnológico básico.
-\end{itemize}
-
-\expitem{Soldado Profesional}{Nov 2000 -- Jun 2005}
-{Ejército Nacional de Colombia}{Presencial}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item Trabajo en entornos de alta presión, liderazgo operativo y disciplina institucional.
-\end{itemize}
-\end{experience}
 
 % ===== CERTIFICACIONES =====
-\section*{Certificaciones y Formación Continua}
-\begin{itemize}[leftmargin=*, label=\textbullet]
-    \item \textbf{Google IT Support} (2023)
-    \item \textbf{Google Data Analytics} (2023)
-    \item \textbf{Google Cybersecurity} (En curso, estimación: 2025)
-    \item \textbf{Cisco Networking Academy: IT Customer Support Basics} (2023)
-    \item \textbf{Cisco Networking Academy: Introduction to IoT} (2023)
+\section*{Certificaciones}
+\begin{itemize}
+    \item Google IT Support (2023) | Google Data Analytics (2023) | Google Cybersecurity (En curso 2025)
+    \item Cisco Networking Academy: IT Customer Support Basics (2023) | Introduction to IoT (2023)
 \end{itemize}
 
-% ===== HABILIDADES TÉCNICAS =====
+% ===== HABILIDADES =====
 \section*{Habilidades Técnicas}
-\begin{itemize}[leftmargin=*, label={}]
-    \item \skillcategory{Soporte TI}{Nivel 1 y 2, Help Desk, Gestión de Incidencias (ITIL), Soporte Remoto (TeamViewer, AnyDesk)}
-    \item \skillcategory{Redes}{LAN/WAN, TCP/IP, Switching, Rack Management, Conectividad}
-    \item \skillcategory{Sistemas Operativos}{Windows Server (básico), Linux (básico), Active Directory (básico)}
-    \item \skillcategory{Ciberseguridad}{Fundamentos, Hardening, Awareness}
-    \item \skillcategory{Desarrollo Web}{HTML5, CSS3, JavaScript (básico), WordPress, Diseño Responsivo}
+\begin{itemize}[label={}]
+    \item \textbf{Soporte TI:} Nivel 1/2, Help Desk, Service Desk, ITIL, TeamViewer, AnyDesk
+    \item \textbf{Redes:} LAN/WAN, TCP/IP, Switching, Routing, Rack Management, Conectividad
+    \item \textbf{Sistemas:} Windows Server, Linux, Active Directory, Windows 10/11
+    \item \textbf{Ciberseguridad:} Fundamentos, Hardening, Security Awareness
+    \item \textbf{Desarrollo:} HTML5, CSS3, JavaScript, WordPress, Diseño Responsivo
+    \item \textbf{Herramientas:} Microsoft Office Suite (Excel, Word, PowerPoint, Outlook)
 \end{itemize}
 
-% ===== HABILIDADES TRANSVERSALES =====
 \section*{Habilidades Transversales}
-Resolución de problemas, comunicación asertiva, atención al detalle, pensamiento crítico, adaptabilidad, trabajo bajo presión, orientación al usuario, liderazgo operativo.
+Resolución de problemas, comunicación asertiva, atención al detalle, pensamiento crítico, adaptabilidad, trabajo bajo presión, orientación al usuario, liderazgo, trabajo en equipo, gestión del tiempo.
 
 % ===== IDIOMAS =====
 \section*{Idiomas}
-\begin{itemize}[leftmargin=*, label={}]
+\begin{itemize}[label={}]
     \item \textbf{Español:} Nativo
-    \item \textbf{Inglés:} Básico (A2 – Comprensión y escritura técnica)
+    \item \textbf{Inglés:} Básico (A2 - Comprensión y escritura técnica)
 \end{itemize}
-
-% ===== NOTA ATS =====
-\vspace{1em}
-{\footnotesize \color{graytext} \textbf{Nota:} Este CV está optimizado para sistemas ATS (Applicant Tracking Systems) con palabras clave relevantes y estructura clara.}
 
 \end{document}
