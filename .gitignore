@@ -1,0 +1,28 @@
+# Archivos de compilación LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# PDFs (opcional - si no quieres subir el PDF generado)
+# *.pdf
+
+# Archivos de backup
+*~
+*.backup
+*.swp
+
+# Directorios de salida
+out/
+_output/
+build/
